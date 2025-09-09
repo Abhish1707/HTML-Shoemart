@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Brands | Squid Sneakers</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: 'SF Pro Display', 'Inter', Arial, sans-serif;
+      background: #f5f5f7;
+      color: #1d1d1f;
+    }
+    header {
+      background: #fff;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+      padding: 0 40px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 56px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .logo {
+      font-size: 1.6rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: #1d1d1f;
+    }
+    nav ul {
+      display: flex;
+      gap: 32px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    nav a {
+      color: #1d1d1f;
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: 500;
+      padding: 2px 0;
+      transition: color 0.2s;
+    }
+    nav a:hover {
+      color: #0071e3;
+    }
+    .brands-section {
+      max-width: 1200px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+    .brands-title {
+      font-size: 2.2rem;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .brands-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+      gap: 32px;
+    }
+    .brand-card {
+      background: #fff;
+      border-radius: 24px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+      padding: 32px 24px;
+      text-align: center;
+      transition: box-shadow 0.2s;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .brand-card:hover {
+      box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+    }
+    .brand-logo {
+      width: 80px;
+      height: 80px;
+      object-fit: contain;
+      margin-bottom: 18px;
+      background: #f5f5f7;
+      border-radius: 16px;
+      padding: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    }
+    .brand-name {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Top Bar -->
+  <div style="background:#fff; border-bottom:1px solid #eee; padding:0 0 0 0;">
+    <div style="max-width:1400px; margin:0 auto; display:flex; align-items:center; height:56px;">
+      <!-- Logo Area -->
+      <div style="padding:0 32px;">
+        <a href="index.html">
+          <img src="assets/Gemini_Generated_Image_q9ah8bq9ah8bq9ah-fotor-bg-remover-2025090919246.png" alt="Squid Sneakers Logo" style="height:64px;">
+        </a>
+      </div>
+      <!-- Spacer -->
+      <div style="flex:1;"></div>
+      <!-- Utility Links -->
+      <div style="display:flex; gap:24px; align-items:center; font-size:1rem;">
+        <a href="#" style="color:#222; text-decoration:none;">Find a Store</a>
+        <a href="#" style="color:#222; text-decoration:none;">Help</a>
+        <a href="#" style="color:#222; text-decoration:none;">Join Us</a>
+        <a href="#" style="color:#222; text-decoration:none;">Sign In</a>
+        <a href="#" style="color:#222; text-decoration:none;">
+          <svg width="24" height="24" fill="none"><circle cx="12" cy="12" r="10" stroke="#222" stroke-width="2"/></svg>
+        </a>
+        <a href="#" style="color:#222; text-decoration:none;">
+          <svg width="24" height="24" fill="none"><rect x="4" y="8" width="16" height="12" rx="2" stroke="#222" stroke-width="2"/><path d="M8 8V6a4 4 0 118 0v2" stroke="#222" stroke-width="2"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- Main Navigation -->
+  <header style="background:#fff; border-bottom:1px solid #eee;">
+    <nav style="max-width:1400px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; height:56px;">
+      <!-- Brand Logo -->
+      <div style="font-size:2.5rem; font-weight:700; letter-spacing:-0.02em; color:#222; padding-left:32px;">
+        <a href="index.html" style="color:inherit; text-decoration:none;">Squid Sneakers</a>
+      </div>
+      <!-- Navigation Tabs -->
+      <ul style="display:flex; gap:32px; list-style:none; margin:0; padding:0; font-size:1.1rem; font-weight:500;">
+        <li><a href="index.html" style="color:#222; text-decoration:none; padding:8px 0;">New & Featured</a></li>
+        <li><a href="men.html" style="color:#222; text-decoration:none; padding:8px 0;">Men</a></li>
+        <li><a href="women.html" style="color:#222; text-decoration:none; padding:8px 0;">Women</a></li>
+        <li><a href="kids.html" style="color:#222; text-decoration:none; padding:8px 0;">Kids</a></li>
+        <li><a href="sale.html" style="color:#222; text-decoration:none; padding:8px 0;">Sale</a></li>
+        <li><a href="brands.html" style="color:#0071e3; text-decoration:none; padding:8px 0;">SNKRS</a></li>
+      </ul>
+      <!-- Search Bar -->
+      <div style="padding-right:32px;">
+        <input type="text" placeholder="Search" style="border-radius:24px; border:1px solid #ddd; padding:8px 20px; font-size:1rem; width:180px;">
+      </div>
+    </nav>
+  </header>
+
+  <!-- Brands Section -->
+  <section class="brands-section">
+    <h2 class="brands-title">Sneaker Brands</h2>
+    <div class="brands-grid">
+      <div class="brand-card">
+        <img src="assets/nike-logo.png" alt="Nike" class="brand-logo">
+        <div class="brand-name">Nike</div>
+      </div>
+      <div class="brand-card">
+        <img src="assets/adidas-logo.png" alt="Adidas" class="brand-logo">
+        <div class="brand-name">Adidas</div>
+      </div>
+      <div class="brand-card">
+        <img src="assets/puma-logo.png" alt="Puma" class="brand-logo">
+        <div class="brand-name">Puma</div>
+      </div>
+      <div class="brand-card">
+        <img src="assets/converse-logo.png" alt="Converse" class="brand-logo">
+        <div class="brand-name">Converse</div>
+      </div>
+      <div class="brand-card">
+        <img src="assets/reebok-logo.png" alt="Reebok" class="brand-logo">
+        <div class="brand-name">Reebok</div>
+      </div>
+      <div class="brand-card">
+        <img src="assets/newbalance-logo.png" alt="New Balance" class="brand-logo">
+        <div class="brand-name">New Balance</div>
+      </div>
+      <div class="brand-card">
+        <img src="assets/jordan-logo.png" alt="Jordan" class="brand-logo">
+        <div class="brand-name">Jordan</div>
+      </div>
+      <div class="brand-card">
+        <img src="assets/vans-logo.png" alt="Vans" class="brand-logo">
+        <div class="brand-name">Vans</div>
+      </div>
+      <div class="brand-card">
+        <img src="assets/asics-logo.png" alt="ASICS" class="brand-logo">
+        <div class="brand-name">ASICS</div>
+      </div>
+      <div class="brand-card">
+        <img src="assets/underarmour-logo.png" alt="Under Armour" class="brand-logo">
+        <div class="brand-name">Under Armour</div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
